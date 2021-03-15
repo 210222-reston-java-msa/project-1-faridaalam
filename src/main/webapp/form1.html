@@ -1,0 +1,86 @@
+<div class="form-row">
+		 <div class="col-md-6"> 
+			<div class="md-form form-group">
+				<label for="formGroupExampleInput">Amount:</label> <input
+					type="number" class="form-control" id="amount"
+					placeholder="Example input" min="0.01" value="0.00" required
+					autofocus> 
+					</div>
+					</div>
+					 <div class="col-md-6"> 
+			<div class="md-form form-group"> 
+			
+				<label for="formGroupExampleInput2">Note:</label>
+				<input type="text" class="form-control" id="note"
+					placeholder="Write a note for your expense" maxlength="50" >
+			
+			</div></div></div>	
+				<br/>
+					
+					     <div class="row">
+        
+       
+        
+					<div class="md-form form-group">
+					
+					<label class="form-check-label"	for="inlineRadio1">Select expense type: </label>  
+								&nbsp; &nbsp; &nbsp; &nbsp; 							
+				
+					<input class="form-check-input" type="radio" name="ExpenseType" id="inlineRadio1" value="Lodging" checked >
+					<label class="form-check-label" for="inlineRadio1"> Lodging </label> 
+									&nbsp; &nbsp; &nbsp; &nbsp; 
+								
+				
+				
+					<input class="form-check-input" type="radio" name="ExpenseType" id="inlineRadio2" value="Travel">
+						<label class="form-check-label" for="inlineRadio2"> Travel </label> &nbsp; &nbsp; &nbsp; &nbsp; 
+					
+				
+			
+					<input class="form-check-input" type="radio" name="ExpenseType" id="inlineRadio3" value="Food">
+						<label class="form-check-label" for="inlineRadio3"> Food </label> &nbsp; &nbsp; &nbsp; &nbsp; 
+					
+			
+				
+					<input class="form-check-input" type="radio" name="ExpenseType" id="inlineRadio4" value="Other">
+					<label class="form-check-label" for="inlineRadio4"> Other </label> &nbsp; &nbsp; &nbsp; &nbsp; 
+				
+				 <br /> 
+			</div>
+
+
+</div></div>
+
+
+			<div class="col align-self-center">
+				<div class="col-lg-6 mx-auto">
+					<p class="font-italic text-info text-center">You can add an
+						image to your expense record.</p>
+					<!-- Upload image input-->
+					<div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+						<input id="upload" type="file" onchange="readURL(this);" class="form-control border-0"> 
+						<label id="upload-label" for="upload" class="font-weight-light text-muted">Choose a file to attach to your expense record</label>
+							<div class="input-group-append"> 
+								<label for="upload" class="btn btn-light m-0 rounded-pill px-4">
+								<i class="fa fa-cloud-upload mr-2 text-muted"></i> 
+								<small class="text-uppercase font-weight-bold text-red">Choose file</small>
+							</label>
+						</div>
+					</div>
+
+					<!-- Uploaded image area-->
+
+					<div class="image-area mt-4">
+						<img id="imageResult" src="#" alt=""
+							class="img-fluid rounded shadow-sm mx-auto d-block">
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col align-self-end">
+				<button type="button" id = "submitF1" class="btn btn-success">Submit</button>
+				<span class="float-right">
+					<button type="button" id="cancelF1" class="btn btn-outline-success">Cancel</button>
+				</span>
+			</div>
